@@ -10,20 +10,18 @@
     <form action="https:fom.in.ua/echo" method="POST">
         <p><b>АВТОРИЗАЦИЯ ПОЛЬЗОВАТЕЛЯ</b></p>
         <br>
-        <p>
-            ВВЕДИТЕ ВАШ EMAIL
-        </p>
-        <p><input type="email" name="Email" required placeholder="email"></p>
+        <p>ВВЕДИТЕ ВАШ EMAIL</p>
+        <div><input type="email" name="Email" required placeholder="email"></div>
         <br>
-        <p>
-            ВВЕДИТЕ ВАШ ПАРОЛЬ
-        </p>
-        <p><input type="password" name="Password" required placeholder="password" minlength="6"></p>
-        <label>
-          <p><input type="checkbox" name="save">Запомнить пароль</p>
-        </label>
-        <br><br>
-        <p><input type="submit" value="ВОЙТИ"></p>
+        <p>ВВЕДИТЕ ВАШ ПАРОЛЬ</p>
+        <div><input type="password" name="Password" required placeholder="password" minlength="6"></div>
+        <br>
+        <div>
+            <label for="zapomnit">Запомнить пароль</label>
+            <input type="checkbox" id="zapomnit" name="save"></p>
+        </div> 
+        <br>
+        <div><input type="submit" value="ВОЙТИ"></div>
       </form> 
 </body>
 </html>

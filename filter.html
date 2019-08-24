@@ -11,16 +11,26 @@
         <p><b>ФИЛЬТРЫ</b></p>
         <br>
         <p>ТИП КУЗОВА:</p>
-        <p>
-            Универсал <input type="checkbox" name="kuzov_universal">
-            <br>Седан <input type="checkbox" name="kuzov_sedan">
-            <br>Внедорожник <input type="checkbox" name="kuzov_vnederoj">
-            <br>Хэтчбек <input type="checkbox" name="kuzov_hatchback">
-            <br>Минивэн <input type="checkbox" name="kuzov_miniven">
-        </p>
+        <div>
+            <label for="universal">Универсал</label>
+            <input type="checkbox" id="universal" name="kuzov_universal">
+        </div>
+        <div>
+            <label for="sedan">Седан</label>
+            <input type="checkbox" id="sedan" name="kuzov_sedan">
+        </div>
+        <div><label for="vnedor">Внедорожник</label>
+            <input type="checkbox" id="vnedor" name="kuzov_vnederoj">
+        </div>
+        <div><label for="hatch">Хэтчбек</label>
+            <input type="checkbox" id="hatch" name="kuzov_hatchback">
+        </div>
+        <div><label for="miniven">Минивэн</label>
+            <input type="checkbox" id="miniven" name="kuzov_miniven">
+        </div>
         <br>
         <p>МАРКА АВТО:</p>
-        <p>
+        <div>
             <select name="marka_avto" >
                 <option selected>Выберите марку</option>
                 <option value="BMW">BMW</option>
@@ -30,10 +40,10 @@
                 <option value="MAZDA">MAZDA</option>
                 <option value="HYUNDAI">HYUNDAI</option>
             </select>
-        </p>
+        </div>
         <br>
         <p>СТРАНА ПРОИЗВОДИТЕЛЬ:</p>
-        <p>
+        <div>
             <select name="country">
                 <option selected>Выберите страну</option>
                 <option value="Japan">Япония</option>
@@ -44,22 +54,25 @@
                 <option value="Ukraine">Украина</option>
                 <option value="Poand">Польша</option>
             </select>
-        </p>
+        </div>
         <br>
-        <p>СТОИМОСТЬ: <input type="text" name="price_ot" size="8" placeholder="ОТ"> <input type="text" name="price_do" size="8" placeholder="ДО">
-        <select name="currency">
-            <option value="USD">USD</option>
-            <option value="UAH">UAH</option>
-            <option value="RUB">RUB</option>
-        </select></p>
+        <p>СТОИМОСТЬ:</p>
+        <div>
+            <input type="text" name="price_ot" size="8" placeholder="ОТ"> <input type="text" name="price_do" size="8" placeholder="ДО">
+            <select name="currency">
+                <option value="USD">USD</option>
+                <option value="UAH">UAH</option>
+                <option value="RUB">RUB</option>
+            </select>
+        </div>
         <br>
         <p>ГОД ВЫПУСКА:</p>
-        <p>
+        <div>
             <input type="number" name="car_year" min="1950" max="2019" step="1">
-        </p>
+        </div>
         <br>
         <p>СОСТОЯНИЕ:</p>
-        <p>
+        <div>
             <select name="sostoynie" multiple>
                 <option value="bitaia">Битая</option>
                 <option value="v_kredite">В кредите</option>
@@ -67,26 +80,34 @@
                 <option value="prodavec">Продавец</option>
                 <option value="pod_zakaz">Под заказ</option>
             </select>
-        </p>
+        </div>
         <br>
         <p>ТОПЛИВО:</p>
-        <p>
-            <input type="checkbox" name="toplivo" value="Benzin">Бензин
-            <input type="checkbox" name="toplivo" value="Dizel">Дизель
-            <input type="checkbox" name="toplivo" value="Gaz">Газ
-            <input type="checkbox" name="toplivo" value="Electro">Электро
-            <input type="checkbox" name="toplivo" value="Gibrid">Гибрид
-        </p>
+        <div>
+            <input type="checkbox" id="benz" name="toplivo" value="Benzin">
+            <label for="benz">Бензин</label>
+            <input type="checkbox" id="dizel" name="toplivo" value="Dizel">
+            <label for="dizel">Дизель</label>
+            <input type="checkbox" id="gaz" name="toplivo" value="Gaz">
+            <label for="gaz">Газ</label>
+            <input type="checkbox" id="elektro" name="toplivo" value="Electro">
+            <label for="elektro">Электро</label>
+            <input type="checkbox" id="gibrid" name="toplivo" value="Gibrid">
+            <label for="gibrid">Гибрид</label>
+        </div>
         <br>
         <p>КОРОБКА ПЕРЕДАЧ:</p>
-        <P>
-            <input type="checkbox" name="KP" value="Avtomat">Автомат
-            <input type="checkbox" name="KP" value="Mehanika">Механика
-            <input type="checkbox" name="KP" value="Adaptivna">Адаптивная
-        </P>
+        <div>
+            <input type="checkbox" id="avto" name="KP" value="Avtomat">
+            <label for="avto">Автомат</label>
+            <input type="checkbox" id="mex" name="KP" value="Mehanika">
+            <label for="mex">Механика</label>
+            <input type="checkbox" id="adapt" name="KP" value="Adaptivna">
+            <label for="adapt">Адаптивная</label>
+        </div>
         <br>
         <p>ЦВЕТ:</p>
-        <p>
+        <div>
             <select name="color">
                 <option selected>Выберите цвет</option>
                 <option value="White">Белый</option>
@@ -97,10 +118,10 @@
                 <option value="Gray">Серый</option>
                 <option value="Blue">Синий</option>
             </select>
-        </p>
+        </div>
         <br>
         <p>КОМФОРТ:</p>
-        <p>
+        <div>
             <select name="comfort" multiple>
                 <option value="bortovoi_komp">Бортовой компьютер</option>
                 <option value="koja_salon">Кожаный салон</option>
@@ -109,9 +130,9 @@
                 <option value="klimat_kontrol">Климат контроль</option>
                 <option value="kondicioner">Кондиционер</option>
             </select>
-        </p> 
+        </div> 
         <br>
-        <input type="submit" value="НАЙТИ">
+        <div><input type="submit" value="НАЙТИ"></div>
       </form>
 </body>
 </html>
